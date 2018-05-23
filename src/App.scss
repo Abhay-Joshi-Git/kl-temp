@@ -3,27 +3,24 @@ html {
 }
 
 body {
-  height: 97%;
+  height: 98%;
   margin: 0;
   padding: 0;  
   font-family: sans-serif;
 }
 
 #root {
-  height: 99%;
+  height: 97%;
 }
 
-.wrapper {
+.app {
   background-color: #f3f6f9;
+  padding: 10px;
 }
 
 .left-nav-bar-container {
   width: 10%;
   float: left;
-}
-
-.main-content {
-  width: 87%;
 }
 
 .full-height {

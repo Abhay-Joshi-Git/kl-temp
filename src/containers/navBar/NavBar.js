@@ -4,6 +4,9 @@ import './NavBar.css';
 
 const NavBar = () => (
   <div className="left-pane full-height">
+    <div className="quick-link logo">
+      Klaver
+    </div>
     <div className="quick-link">
       <Link to="/">
         <i className="fa fa-home" />
