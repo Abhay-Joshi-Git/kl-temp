@@ -1,0 +1,29 @@
+.left-pane {
+	width:100%;
+	background-color:#006a4e;
+	color:#fff;
+	font-size:12px;
+	font-weight:300;
+  
+  .quick-link {
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    
+    a {
+      color:#fff;
+      vertical-align:middle;
+    }
+
+    &:hover {
+      background-color:#5fcac1;
+      color:#006a4e;
+      transition: all .3s ease;
+    }
+
+    i {
+      font-size:20px;
+      padding-right: 10px;
+    }
+  }
+}

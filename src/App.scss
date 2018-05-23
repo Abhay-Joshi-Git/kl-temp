@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 97%;
+  margin: 0;
+  padding: 0;  
+  font-family: sans-serif;
+}
+
+#root {
+  height: 99%;
+}
+
+.wrapper {
+  background-color: #f3f6f9;
+}
+
+.left-nav-bar-container {
+  width: 10%;
+  float: left;
+}
+
+.main-content {
+  width: 87%;
+}
+
+.full-height {
+  height: 100%;
+}
