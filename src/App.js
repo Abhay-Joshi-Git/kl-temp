@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
-import NavBar from 'containers/navBar/NavBar';
 import MainContent from 'containers/mainContent/MainContent';
+import Login from 'containers/login/Login';
 
 import store from './store';
 
@@ -13,12 +13,10 @@ const App = () => (
   <Provider store={store}>
     <BrowserRouter>
       <div className="app full-height">
-        <div className="full-height left-nav-bar-container">
-          <NavBar />
-        </div>
-        <div className="main-content full-height">
-          <MainContent />
-        </div>
+        <Switch>
+          <Route exact path="/login" component={Login}/>
+          <Route component={MainContent}/>
+        </Switch>
       </div>
     </BrowserRouter>
   </Provider>
