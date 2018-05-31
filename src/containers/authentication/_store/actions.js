@@ -1,10 +1,7 @@
-import types from './types';
 
-const setLogedIn = payload => ({
-  type: types.SET_LOGGED_IN,
-  payload
-});
+let actions = store => ({
+  setLogedIn: ({}) => ({ isAuthenticated: true }),
+  getAuth: ({}) => ({ testString: '12321321' }),  
+})
 
-export default {
-  setLogedIn
-};
+export default actions;

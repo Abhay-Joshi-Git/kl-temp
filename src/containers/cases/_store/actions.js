@@ -1,9 +1,9 @@
-import types from './types';
 
-const fetchCases = () => ({
-  type: types.FETCH_CASES,
-});
+let actions = store => ({
+  setLogedIn: ({}) => ({ isAuthenticated: true }),
 
-export default {
-  fetchCases,
-};
+  // setLogedIn1: ({}) => ({ : true })
+  
+})
+
+export default actions;

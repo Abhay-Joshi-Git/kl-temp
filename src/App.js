@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Provider } from 'react-redux';
-
+import { Provider, connect } from 'unistore/react'
 import MainContent from 'containers/mainContent/MainContent';
 import Login from 'containers/login/Login';
 import store from './store';
@@ -16,8 +15,8 @@ const App = () => (
     <BrowserRouter>
       <div className="app full-height">
         <Switch>
-          <Route exact path="/login" component={userIsNotAuthenticatedRedir(Login)}/>
-          <Route component={userIsAuthenticatedRedir(MainContent)}/>
+          <Route exact path="/login" component={Login}/>
+          <Route component={MainContent}/>
         </Switch>
       </div>
     </BrowserRouter>

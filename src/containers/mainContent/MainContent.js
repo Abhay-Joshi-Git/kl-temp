@@ -6,6 +6,7 @@ import Header from 'containers/header/Header';
 import Dashboard from 'containers/dashboard/Dashboard.js';
 import Cases from 'containers/cases/Cases.js';
 import './MainContent.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const MainContent = () => (
   <div className="full-height">
