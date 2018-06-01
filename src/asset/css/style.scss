@@ -1,0 +1,24 @@
+
+																											/*login page*/
+
+/*==============================================login wrapper=============================================================*/
+
+.left-overlay{ display: flex;height: 100vh; background: #004F59;}
+.logo img{max-width: 350px; margin-bottom:30px;}
+.form fieldset {background: #fff;padding: 0px 70px 0px;}
+.form fieldset .btn {width: 100%;margin-top: 20px;}
+.login-wrapper .login-form{height: 100vh;display: flex;align-items: center;justify-content: center;}
+.login-wrapper hgroup{margin-bottom:30px;}
+.form fieldset .btn {width: 100%;margin-top: 20px;border:#004F59;color:#fff;}
+
+
+
+																											/*sign-up page*/
+
+/*==============================================sign-up wrapper=============================================================*/
+
+
+.sign-up-wrapper .sign-up-form{height: 100vh;display: flex;align-items: center;justify-content: center;}
+.sign-up-wrapper hgroup{margin-bottom:30px;}
+.sign-up-wrapper fieldset .btn {width: 100%;margin-top: 20px;border:#004F59;color:#fff;}
+.sign-up-wrapper .checkbox-block {width: 80%;padding-left: 20px;}

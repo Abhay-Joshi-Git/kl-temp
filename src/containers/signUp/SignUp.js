@@ -2,14 +2,14 @@ import React from 'react';
 import { Row, Col,Form, FormGroup, Input, Label, Button } from 'reactstrap';
 import {APP_LOGO} from '../../asset/ImageConstants'
 
-const Login = () => (
-	<div className="login-wrapper f-fix">
+const SignUp = () => (
+	<div className="sign-up-wrapper  f-fix">
 		<Row className="no-margin">
 			<Col lg="6" className="no-padding">
 				<div className="left-overlay"></div>
 			</Col>
 			<Col lg="6" className="no-padding">
-				<Form className="form-horizontal form login-form " action=" " method="post"  id="contact_form">
+				<Form className="form-horizontal sign-up-form " action=" " method="post"  id="contact_form">
 					<fieldset>
 						<div className="logo a-center f-fix">
 							<img src={APP_LOGO} alt="logo" />
@@ -21,21 +21,31 @@ const Login = () => (
 						<FormGroup>
 							<div className="inputGroupContainer">
 								<Label className="control-label">Email address</Label>
-								<Input name="email" placeholder="Enter Username/ Email here" className="form-control"  type="text"/>
+								<Input type="email" name="email" placeholder="Enter Username/ Email here" className="form-control"/>
+							</div>
+						</FormGroup>
+						<FormGroup>
+							<div className="inputGroupContainer">
+								<Label className="control-label">Username</Label>
+								<Input type="text" name="Username" placeholder="Username" className="form-control"/>
 							</div>
 						</FormGroup>
 						<FormGroup>
 							<div className="inputGroupContainer">
 								<Label className="control-label">Password</Label>
-								<Input  name="user_password" placeholder="Enter Password here" className="form-control"  type="password"/>
+								<Input  type="password" name="user_password" placeholder="Enter Password here" className="form-control"/>
 							</div>
 						</FormGroup>
-						<FormGroup className="">
-							<Button type="submit" className="btn secondary-bg-color" >LOG IN</Button>
-						</FormGroup>						
-						<FormGroup className="a-center">
-							<a className="secondary-color">Forgot Password?</a>
+						<FormGroup className="checkbox-block">
+							<Label>
+								<Input type="checkbox" />
+								I have read and agree to the terms & conditions on the usage of this site.
+							</Label>
 						</FormGroup>
+						<FormGroup className="a-center">
+							<Button type="submit" className="btn secondary-bg-color" >SIGN UP</Button>
+						</FormGroup>
+						
 					</fieldset>
 				</Form>
 			</Col>
@@ -43,4 +53,4 @@ const Login = () => (
 	</div>
 );
 
-export default Login;
+export default SignUp;

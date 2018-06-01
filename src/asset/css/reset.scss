@@ -1,0 +1,54 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: Roboto;
+	src: url('../fonts/Roboto/Roboto-Regular.ttf')
+}
+
+* { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; margin:0;}
+html body {
+	line-height: 20px; font-family: 'Roboto', serif;font-weight:normal;display:inline-block;
+	width:100%;	text-decoration:none;	background-color:#fff; font-size:13px; color:#2E2E2E;}
+input:focus {outline: 0;}
+h1,h2,h3,h4,h5,h6{font-family: 'Roboto', serif;}
+ul, ul li, ol, ol li{ margin:0px; padding:0px; list-style:none; }
+img{border:0px none;}
+
+
+
+.hidden       { display:block !important; border:0 !important; margin:0 !important; padding:0 !important; font-size:0 !important; line-height:0 !important; width:0 !important; height:0 !important; overflow:hidden !important; }
+.nobr         { white-space:nowrap !important; }
+.wrap         { white-space:normal !important; }
+.a-left       { text-align:left !important; }
+.a-center     { text-align:center !important; }
+.a-right      { text-align:right !important; }
+.v-top        { vertical-align:top; }
+.v-middle     { vertical-align:middle; }
+.f-left,
+.left         { float:left !important; }
+.f-right,
+.right        { float:right !important; }
+.f-none       { float:none !important; }
+.f-fix        { float:left; width:100%; }
+.f-block      { display:inline-block; vertical-align:top; width:100%; }
+.no-display   { display:none; }
+.no-margin    { margin:0 !important; }
+.no-marginL   { margin-left:0 !important; }
+.no-marginR   { margin-right:0 !important; }
+.no-marginT   { margin-top:0 !important; }
+.no-marginB   { margin-bottom:0 !important; }
+.no-padding   { padding:0 !important; }
+.no-paddingT   { padding-top:0 !important; }
+.no-paddingL   { padding-left:0 !important; }
+.no-paddingR   { padding-right:0 !important; }
+.no-paddingB   { padding-bottom:0 !important; }
+.no-bg        { background:none !important; }
+.no-border    {   border: 0 none !important;}
+.clear    { clear:both; }
+.primary-bg-color{background:#004F59;}
+.primary-color{color:#004F59;}
+.secondary-bg-color{background:#00B2A9;}
+.secondary-color{color:#00B2A9;}
+
