@@ -1,18 +1,10 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import createSagaMiddleware from 'redux-saga';
-
 import cases from 'containers/cases/_store/reducer';
-import casesSagas from 'containers/cases/_store/sagas';
+// import authentication from 'containers/authentication/_store/reducer';
+import createStore from 'unistore'
 
-const rootReducer = combineReducers({
-  cases,
+const store = createStore({
+  isAuthenticated: false,
+  testString: 'testString'
 });
-
-const sagaMiddleware = createSagaMiddleware();
-const store = createStore(
-  rootReducer,
-  applyMiddleware(sagaMiddleware),
-);
-sagaMiddleware.run(casesSagas.fetchCasesWatcher);
 
 export default store;
