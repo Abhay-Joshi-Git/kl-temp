@@ -33,7 +33,7 @@ const SignUp = () => (
 						<FormGroup>
 							<div className="inputGroupContainer">
 								<Label className="control-label">Password</Label>
-								<Input  type="password" name="user_password" placeholder="Enter Password here" className="form-control"/>
+								<Input  type="password" name="password" placeholder="Enter Password here" className="form-control"/>
 							</div>
 						</FormGroup>
 						<FormGroup className="checkbox-block">

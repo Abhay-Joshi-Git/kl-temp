@@ -19,7 +19,7 @@ let actions = store => ({
           'Content-Type': 'application/x-www-form-urlencoded'
       }
     };
-    axios(authOptions)
+    return axios(authOptions)
       .then(({ data }) => {
         console.log("DATA::::"+data)
         alert("success")
