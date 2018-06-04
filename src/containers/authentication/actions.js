@@ -13,7 +13,7 @@ let actions = store => ({
     }
     var authOptions = {
       method: 'POST',
-      url: 'http://localhost:8080/auth/realms/demo/protocol/openid-connect/token',
+      url: '/auth/realms/demo/protocol/openid-connect/token',
       data: qs.stringify(loginObj),
       headers: {
           'Content-Type': 'application/x-www-form-urlencoded'

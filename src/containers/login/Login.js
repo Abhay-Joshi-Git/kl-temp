@@ -96,9 +96,9 @@ const LoginForm = withFormik({
     }		
     return errors;
   },
-	handleSubmit(values, { setSubmitting, setErrors }) {
-		const { userName, password } = values;
-		this.props.checkAuth(userName, password).then(() => {
+	handleSubmit(values, { props, setSubmitting, setErrors }) {
+		const { email, password } = values;
+		props.checkAuth(email, password).then(() => {
 			setSubmitting(false);
 		}).catch((errors) => {
 			// setErrors({})
